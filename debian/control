@@ -1,0 +1,32 @@
+Source: evolvere-2
+Section: misc
+Priority: optional
+Maintainer: Arjen Balfoort <arjenbalfoort@solydxk.com>
+Build-Depends: debhelper-compat (= 12)
+Standards-Version: 4.5.0
+Vcs-Git: git://github.com/franksouza183/Evolvere-Icons.git
+Vcs-Browser: https://github.com/franksouza183/Evolvere-Icons.git
+
+Package: evolvere-2
+Architecture: all
+Depends: ${misc:Depends}
+Description: Evolvere 2 icon theme
+ Icon theme: default
+ 
+Package: evolvere-2-mono
+Architecture: all
+Depends: ${misc:Depends}, evolvere-2
+Description: Evolvere 2 mono app icons
+ Icon theme: monochrome app icons for evolvere-2
+
+Package: evolvere-2-blue
+Architecture: all
+Depends: ${misc:Depends}
+Description: Evolvere 2 Blue icon theme
+ Icon theme: blue folders edition
+ 
+Package: evolvere-2-blue-mono
+Architecture: all
+Depends: ${misc:Depends}, evolvere-2-blue
+Description: Evolvere 2 Blue mono app icons
+ Icon theme: monochrome app icons for evolvere-2-blue

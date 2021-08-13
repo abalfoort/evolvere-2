@@ -165,16 +165,14 @@ if [ ! -e "$EVOLVERE2DIR/actions/24/xfsm-switch-user.svg" ]; then ln -sfv 'syste
 if [ ! -e "$EVOLVERE2DIR/actions/64/xfsm-switch-user.svg" ]; then ln -sfv 'system-switch-user.svg' "$EVOLVERE2DIR/actions/64/xfsm-switch-user.svg"; fi
 
 # Copy some additional icons
-if [ ! -e "$EVOLVERE2DIR/apps/64/dia.svg" ]; then cp -vf additional/dia.svg $EVOLVERE2DIR/apps/64/; fi
-if [ ! -e "$EVOLVERE2DIR/apps/64/gtkhash.svg" ]; then cp -vf additional/gtkhash.svg $EVOLVERE2DIR/apps/64/; fi
-if [ ! -e "$EVOLVERE2DIR/apps/64/plymouth.svg" ]; then cp -vf additional/plymouth.svg $EVOLVERE2DIR/apps/64/; fi
-if [ ! -e "$EVOLVERE2DIR/apps/64/samba-share.svg" ]; then cp -vf additional/samba-share.svg $EVOLVERE2DIR/apps/64/; fi
-if [ ! -e "$EVOLVERE2DIR/apps/64/virusscan.svg" ]; then cp -vf additional/virusscan.svg $EVOLVERE2DIR/apps/64/clamtk.svg; fi
+for F in $(ls additional); do
+    if [ ! -e "$EVOLVERE2DIR/apps/64/$F" ]; then cp -vf additional/$F $EVOLVERE2DIR/apps/64/; fi
+done
 if [ ! -e "$EVOLVERE2DIR/apps/24/applications-internet.svg" ]; then cp -vf $EVOLVERE2DIR/places/24/folder-remote.svg $EVOLVERE2DIR/apps/24/applications-internet.svg; fi
 
 # Remove broken links
 echo
-find . -xtype l -exec rm -v {} \;
+find -L . -type l -exec rm -v {} \;
 echo
 
 echo 'Create mono packages...'
@@ -207,6 +205,12 @@ if [ ! -e "$EVOLVERE2DIR/apps/18/org.xfce.settings.manager.svg" ]; then ln -sfv 
 if [ ! -e "$EVOLVERE2DIR/apps/22/org.xfce.settings.manager.svg" ]; then ln -sfv 'preferences.svg' "$EVOLVERE2DIR/apps/22/org.xfce.settings.manager.svg"; fi
 if [ ! -e "$EVOLVERE2DIR/apps/24/org.xfce.settings.manager.svg" ]; then ln -sfv 'preferences.svg' "$EVOLVERE2DIR/apps/24/org.xfce.settings.manager.svg"; fi
 if [ ! -e "$EVOLVERE2DIR/apps/64/org.xfce.settings.manager.svg" ]; then ln -sfv 'preferences.svg' "$EVOLVERE2DIR/apps/64/org.xfce.settings.manager.svg"; fi
+# And remove these from the mono package
+rm -f "$EVOLVERE2DIR-mono/apps/16/org.xfce.settings.manager.svg"
+rm -f "$EVOLVERE2DIR-mono/apps/18/org.xfce.settings.manager.svg"
+rm -f "$EVOLVERE2DIR-mono/apps/22/org.xfce.settings.manager.svg"
+rm -f "$EVOLVERE2DIR-mono/apps/24/org.xfce.settings.manager.svg"
+rm -f "$EVOLVERE2DIR-mono/apps/64/org.xfce.settings.manager.svg"
 
 # Make a copy of the icon directory
 EVOLVERE2DIR=$EVOLVERE2DIR-blue

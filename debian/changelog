@@ -1,3 +1,16 @@
+evolvere-2 (2.0.6) stable; urgency=low
+
+  * Removed dead symlinks
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Thu, 12 Aug 2021 13:54:07 +0200
+
+evolvere-2 (2.0.5) stable; urgency=low
+
+  * Updated icons from upstream
+  * Added official SolydX and SolydK icons
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Fri, 06 Aug 2021 09:22:49 +0200
+
 evolvere-2 (2.0.4) stable; urgency=low
 
   * Added links for Xfce4 icon renaming

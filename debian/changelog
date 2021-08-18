@@ -1,3 +1,9 @@
+evolvere-2 (2.0.7) stable; urgency=low
+
+  * Moved blue mono preferences-desktop.svg to blue-mono package
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Tue, 17 Aug 2021 13:41:52 +0200
+
 evolvere-2 (2.0.6) stable; urgency=low
 
   * Removed dead symlinks

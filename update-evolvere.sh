@@ -205,6 +205,13 @@ if [ ! -e "$EVOLVERE2DIR/apps/18/org.xfce.settings.manager.svg" ]; then ln -sfv 
 if [ ! -e "$EVOLVERE2DIR/apps/22/org.xfce.settings.manager.svg" ]; then ln -sfv 'preferences.svg' "$EVOLVERE2DIR/apps/22/org.xfce.settings.manager.svg"; fi
 if [ ! -e "$EVOLVERE2DIR/apps/24/org.xfce.settings.manager.svg" ]; then ln -sfv 'preferences.svg' "$EVOLVERE2DIR/apps/24/org.xfce.settings.manager.svg"; fi
 if [ ! -e "$EVOLVERE2DIR/apps/64/org.xfce.settings.manager.svg" ]; then ln -sfv 'preferences.svg' "$EVOLVERE2DIR/apps/64/org.xfce.settings.manager.svg"; fi
+
+# These mono icons should be available in blue-mono theme
+if [ ! -e "$EVOLVERE2DIR-blue-mono/apps/16/preferences-desktop.svg" ]; then ln -sfv 'preferences.svg' "$EVOLVERE2DIR-blue-mono/apps/16/preferences-desktop.svg"; fi
+if [ ! -e "$EVOLVERE2DIR-blue-mono/apps/18/preferences-desktop.svg" ]; then ln -sfv 'preferences.svg' "$EVOLVERE2DIR-blue-mono/apps/18/preferences-desktop.svg"; fi
+if [ ! -e "$EVOLVERE2DIR-blue-mono/apps/22/preferences-desktop.svg" ]; then ln -sfv 'preferences.svg' "$EVOLVERE2DIR-blue-mono/apps/22/preferences-desktop.svg"; fi
+if [ ! -e "$EVOLVERE2DIR-blue-mono/apps/24/preferences-desktop.svg" ]; then ln -sfv 'preferences.svg' "$EVOLVERE2DIR-blue-mono/apps/24/preferences-desktop.svg"; fi
+
 # And remove these from the mono package
 rm -f "$EVOLVERE2DIR-mono/apps/16/org.xfce.settings.manager.svg"
 rm -f "$EVOLVERE2DIR-mono/apps/18/org.xfce.settings.manager.svg"
@@ -218,6 +225,12 @@ cp -r evolvere-2 $EVOLVERE2DIR
 
 # Change theme name
 sed -i 's/Evolvere Icons 2/Evolvere Icons 2 Blue/g' $EVOLVERE2DIR/index.theme
+
+# Remove these icons
+rm -f "$EVOLVERE2DIR/apps/16/preferences-desktop.svg"
+rm -f "$EVOLVERE2DIR/apps/18/preferences-desktop.svg"
+rm -f "$EVOLVERE2DIR/apps/22/preferences-desktop.svg"
+rm -f "$EVOLVERE2DIR/apps/24/preferences-desktop.svg"
 
 # Convert folder colors to blue
 # Original colors

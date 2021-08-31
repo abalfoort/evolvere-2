@@ -20,6 +20,7 @@ find $EVOLVERE2DIR -type f -name "adjust-colors*" -delete
 
 
 # Create additional symlinks
+if [ ! -e "$EVOLVERE2DIR/apps/64/firewall-config.svg" ]; then ln -sfv 'firewall.svg' "$EVOLVERE2DIR/apps/64/firewall-config.svg"; fi
 if [ ! -e "$EVOLVERE2DIR/apps/64/luckybackup.svg" ]; then ln -sfv 'safe.svg' "$EVOLVERE2DIR/apps/64/luckybackup.svg"; fi
 if [ ! -e "$EVOLVERE2DIR/apps/64/gpa.svg" ]; then ln -sfv 'kgpg.svg' "$EVOLVERE2DIR/apps/64/gpa.svg"; fi
 if [ ! -e "$EVOLVERE2DIR/apps/64/lightdm.svg" ]; then ln -sfv 'preferences-system-login.svg' "$EVOLVERE2DIR/apps/64/lightdm.svg"; fi

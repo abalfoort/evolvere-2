@@ -1,3 +1,9 @@
+evolvere-2 (2.0.8) stable; urgency=low
+
+  * Added firewall-config icon
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Tue, 31 Aug 2021 13:34:03 +0200
+
 evolvere-2 (2.0.7) stable; urgency=low
 
   * Moved blue mono preferences-desktop.svg to blue-mono package

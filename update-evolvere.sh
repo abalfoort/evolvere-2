@@ -41,6 +41,18 @@ if [ ! -e "$EVOLVERE2DIR/apps/64/org.gnome.FontViewer.svg" ]; then ln -sfv 'font
 if [ ! -e "$EVOLVERE2DIR/apps/64/preferences-desktop.svg" ]; then ln -sfv 'preferences.svg' "$EVOLVERE2DIR/apps/64/preferences-desktop.svg"; fi
 if [ ! -e "$EVOLVERE2DIR/apps/64/preferences-desktop-emoticons.svg" ]; then ln -sfv '../../actions/64/face-smile.svg' "$EVOLVERE2DIR/apps/64/preferences-desktop-emoticons.svg"; fi
 
+for F in $(find $EVOLVERE2DIR -name "ristretto.svg"); do
+    if [ ! -e $(dirname $F)/org.xfce.ristretto.svg ]; then
+        cp -v $F $(dirname $F)/org.xfce.ristretto.svg
+    fi
+done
+
+for F in $(find $EVOLVERE2DIR -name "gnote.svg"); do
+    if [ ! -e $(dirname $F)/org.gnome.Gnote.svg ]; then
+        cp -v $F $(dirname $F)/org.gnome.Gnote.svg
+    fi
+done
+
 # Xfce4 Renaming
 if [ ! -e "$EVOLVERE2DIR/actions/64/org.xfce.about.svg" ]; then ln -sfv 'documentinfo.svg' "$EVOLVERE2DIR/actions/64/org.xfce.about.svg"; fi
 if [ ! -e "$EVOLVERE2DIR/apps/64/org.xfce.Dictionary.svg" ]; then ln -sfv 'dictionary.svg' "$EVOLVERE2DIR/apps/64/org.xfce.Dictionary.svg"; fi

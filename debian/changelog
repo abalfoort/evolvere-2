@@ -1,3 +1,9 @@
+evolvere-2 (2.1.0) stable; urgency=low
+
+  * Update 20230101
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Sun, 01 Jan 2023 19:50:44 +0100
+
 evolvere-2 (2.0.9) stable; urgency=low
 
   * Add org.xfce.ristretto.svg

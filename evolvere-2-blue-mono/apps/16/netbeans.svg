@@ -1,26 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
-<svg width="16" height="16" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="16" height="16" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
 	<metadata>
 		<rdf:RDF>
 			<cc:Work rdf:about="">
 				<dc:format>image/svg+xml</dc:format>
 				<dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-				<dc:title/>
 			</cc:Work>
 		</rdf:RDF>
 	</metadata>
 	<defs>
-		<radialGradient id="a" cx="294.41" cy="-101.36" r="7.254" gradientTransform="matrix(1.5669 0 0 1.5164 -448.31 164.7)" gradientUnits="userSpaceOnUse">
-			<stop stop-color="#213851" stop-opacity=".9059" offset="0"/>
-			<stop stop-color="#27303a" stop-opacity="0" offset="1"/>
-		</radialGradient>
-		<radialGradient id="b" cx="7800.1" cy="-3926.4" r="6.5" gradientTransform="matrix(-7.7857e-6,1.8461,-2,-1.5122e-5,-7844.7,-14396)" gradientUnits="userSpaceOnUse">
-			<stop stop-color="#ffffff" stop-opacity=".74858" offset="0"/>
-			<stop stop-color="#ffffff" stop-opacity=".60511" offset="1"/>
-		</radialGradient>
+		<style id="current-color-scheme" type="text/css">.ColorScheme-Text {color:#090d11;}.ColorScheme-Background{color:#ffffff;}</style>
 	</defs>
-	<path d="m8-0.125-0.5 0.3125-6 3.4688-0.5 0.28125v0.59375 6.9375 0.59375l0.5 0.28125 6 3.4688 0.5 0.3125 0.5-0.3125 6-3.4688 0.5-0.28125v-0.59375-6.9375-0.59375l-0.5-0.28125-6-3.4688zm0 1.1562 0.25 0.125 5.5 3.2188 0.25 0.125v0.3125 6.375 0.3125l-0.25 0.125-5.5 3.2188-0.25 0.125-0.25-0.125-5.5-3.2188-0.25-0.125v-0.3125-6.375-0.3125l0.25-0.125 5.5-3.2188zm0 1.1562-4.5312 2.625 4.5312 2.5938 4.5312-2.5938zm-5 3.4688v5.2812l4.5 2.5938v-5.25zm10 0-4.5 2.625v5.25l4.5-2.5938z" color="#000000" fill="#090d11" fill-opacity=".76621" style="paint-order:normal;text-decoration-line:none;text-indent:0;text-transform:none"/>
-	<path d="m8-0.125-0.5 0.3125-6 3.4688-0.5 0.28125v0.59375 6.9375 0.59375l0.5 0.28125 6 3.4688 0.5 0.3125 0.5-0.3125 6-3.4688 0.5-0.28125v-0.59375-6.9375-0.59375l-0.5-0.28125-6-3.4688-0.5-0.3125zm0 1.1562 0.25 0.125 5.5 3.2188 0.25 0.125v0.3125 6.375 0.3125l-0.25 0.125-5.5 3.2188-0.25 0.125-0.25-0.125-5.5-3.2188-0.25-0.125v-0.3125-6.375-0.3125l0.25-0.125 5.5-3.2188 0.25-0.125zm0 1.1562-4.5312 2.625 4.5312 2.5938 4.5312-2.5938-4.5312-2.625zm-5 3.4688v5.2812l4.5 2.5938v-5.25l-4.5-2.625zm10 0-4.5 2.625v5.25l4.5-2.5938v-5.2812z" color="#000000" fill="url(#a)" fill-opacity=".7533" style="block-progression:tb;font-variant-east_asian:normal;paint-order:normal;text-indent:0;text-transform:none"/>
-	<path d="m8 1.0312-0.25 0.125-5.5 3.2188-0.25 0.125v0.3125 6.375 0.3125l0.25 0.125 5.5 3.2188 0.25 0.125 0.25-0.125 5.5-3.2188 0.25-0.125v-0.3125-6.375-0.3125l-0.25-0.125-5.5-3.2188-0.25-0.125zm0 1.1562 4.5312 2.625-4.5312 2.5938-4.5312-2.5938 4.5312-2.625zm-5 3.4688 4.5 2.625v5.25l-4.5-2.5938v-5.2812zm10 0v5.2812l-4.5 2.5938v-5.25l4.5-2.625z" color="#000000" fill="url(#b)" style="block-progression:tb;font-variant-east_asian:normal;paint-order:normal;text-indent:0;text-transform:none"/>
+	<path id="c" class="ColorScheme-Background" d="m3.0371 10.826-2.0371 1.1738 7 4v-2.3281l-4.9629-2.8457z" style="fill-opacity:.5;fill:currentColor"/>
+	<path class="ColorScheme-Background" d="m12.965 10.828-4.7168 2.7012-0.24805 0.14258v2.3281l7-4-2.0352-1.1719z" style="fill-opacity:.5;fill:currentColor"/>
+	<path class="ColorScheme-Background" d="m11.959 5.75-3.959 2.25v4.5195l3.9727-2.2773v-4.4844l-0.013672-0.0078125z" style="fill-opacity:.5;fill:currentColor"/>
+	<path class="ColorScheme-Background" d="m4.041 5.75-0.013672 0.0078125v4.4844l3.9727 2.2773v-4.5195l-3.959-2.25z" style="fill-opacity:.5;fill:currentColor"/>
+	<path class="ColorScheme-Background" d="m1 4v8l2.0371-1.1738-0.0097656-0.00586v-5.6406l0.0097656-0.0058594-2.0371-1.1738z" style="fill-opacity:.5;fill:currentColor"/>
+	<path class="ColorScheme-Background" d="m15 4-2.0371 1.1738 0.009765 0.0058594v5.6426l-0.007812 0.003906 2.0352 1.1738v-8z" style="fill-opacity:.5;fill:currentColor"/>
+	<path class="ColorScheme-Background" d="m8 3.4824-3.959 2.2676 3.959 2.25 3.959-2.25-3.959-2.2676z" style="fill-opacity:.5;fill:currentColor"/>
+	<path class="ColorScheme-Background" d="m8 0-7 4 2.0371 1.1738 4.9629-2.8457v-2.3281z" style="fill-opacity:.5;fill:currentColor"/>
+	<path class="ColorScheme-Background" d="m8 0v2.3281l4.9629 2.8457 2.0371-1.1738-7-4z" style="fill-opacity:.5;fill:currentColor"/>
+	<path class="ColorScheme-Text" d="m11.959 5.75-3.959 2.25v4.5195l3.9727-2.2773v-4.4844l-0.013672-0.0078125z" style="fill-opacity:.75;fill:currentColor;opacity:.27427"/>
+	<path class="ColorScheme-Text" d="m4.041 5.75-0.013672 0.0078125v4.4844l3.9727 2.2773v-4.5195l-3.959-2.25z" style="fill-opacity:.75;fill:currentColor;opacity:.061448"/>
+	<path class="ColorScheme-Text" d="m8 3.4824-3.959 2.2676 3.959 2.25 3.959-2.25-3.959-2.2676z" style="fill-opacity:.75;fill:currentColor;opacity:.17262"/>
+	<path class="ColorScheme-Text" d="m8 0-7 4 2.0371 1.1738 4.9629-2.8457v-2.3281z" style="fill-opacity:.75;fill:currentColor;opacity:.68937"/>
+	<path class="ColorScheme-Text" d="m8 0v2.3281l4.9629 2.8457 2.0371-1.1738-7-4z" style="fill-opacity:.75;fill:currentColor;opacity:.60612"/>
+	<path class="ColorScheme-Text" d="m3.0371 10.826-2.0371 1.1738 7 4v-2.3281l-4.9629-2.8457z" style="fill-opacity:.75;fill:currentColor;opacity:.68387"/>
+	<path class="ColorScheme-Text" d="m12.965 10.828-4.7168 2.7012-0.24805 0.14258v2.3281l7-4-2.0352-1.1719z" style="fill-opacity:.75;fill:currentColor;opacity:.62327"/>
+	<path class="ColorScheme-Text" d="m15 4-2.0371 1.1738 0.009765 0.0058594v5.6426l-0.007812 0.003906 2.0352 1.1738v-8z" style="fill-opacity:.75;fill:currentColor;opacity:.75485"/>
+	<path class="ColorScheme-Text" d="m1 4v8l2.0371-1.1738-0.0097656-0.00586v-5.6406l0.0097656-0.0058594-2.0371-1.1738z" style="fill-opacity:.75;fill:currentColor;opacity:.93343"/>
+	<path class="ColorScheme-Text" d="m8 2.3281-4.9727 2.8516v5.6406l4.9727 2.8516 0.24805-0.14258 4.7246-2.707v-5.6426zm0 1.1543 3.9727 2.2754v4.4844l-3.9727 2.2773-3.9727-2.2773v-4.4844z" style="fill-opacity:.75;fill:currentColor"/>
 </svg>

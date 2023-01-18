@@ -6,20 +6,22 @@ EVOLVERE2DIR='evolvere-2'
 rm -r $EVOLVERE2DIR*
 git clone https://github.com/franksouza183/Evolvere-Icons.git
 # Rename icon directory
-mv Evolvere-Icons $EVOLVERE2DIR
-chmod -R +w $EVOLVERE2DIR/.git
-chmod -R -x+X $EVOLVERE2DIR
-rm -r $EVOLVERE2DIR/.git
-rm $EVOLVERE2DIR/changelog
+mv Evolvere-Icons/Icons $EVOLVERE2DIR
+chmod -R +w Evolvere-Icons/.git
+rm -r Evolvere-Icons
+#chmod -R -x+X $EVOLVERE2DIR
+#rm -r $EVOLVERE2DIR/.git
+#rm $EVOLVERE2DIR/changelog
 rm $EVOLVERE2DIR/icon-theme.cache
-rm $EVOLVERE2DIR/README.md
-rm $EVOLVERE2DIR/LICENSE
-rm $EVOLVERE2DIR/preview.png
-find $EVOLVERE2DIR -type f -name "*.sh" -delete
-find $EVOLVERE2DIR -type f -name "adjust-colors*" -delete
+#rm $EVOLVERE2DIR/README.md
+#rm $EVOLVERE2DIR/LICENSE
+#rm $EVOLVERE2DIR/preview.png
+#find $EVOLVERE2DIR -type f -name "*.sh" -delete
+#find $EVOLVERE2DIR -type f -name "adjust-colors*" -delete
 
 
 # Create additional symlinks
+if [ ! -e "$EVOLVERE2DIR/apps/64/org.gtkhash.gtkhash.svg" ]; then ln -sfv 'gtkhash.svg' "$EVOLVERE2DIR/apps/64/org.gtkhash.gtkhash.svg"; fi
 if [ ! -e "$EVOLVERE2DIR/apps/64/firewall-config.svg" ]; then ln -sfv 'firewall.svg' "$EVOLVERE2DIR/apps/64/firewall-config.svg"; fi
 if [ ! -e "$EVOLVERE2DIR/apps/64/luckybackup.svg" ]; then ln -sfv 'safe.svg' "$EVOLVERE2DIR/apps/64/luckybackup.svg"; fi
 if [ ! -e "$EVOLVERE2DIR/apps/64/gpa.svg" ]; then ln -sfv 'kgpg.svg' "$EVOLVERE2DIR/apps/64/gpa.svg"; fi
@@ -179,7 +181,9 @@ if [ ! -e "$EVOLVERE2DIR/actions/64/xfsm-switch-user.svg" ]; then ln -sfv 'syste
 
 # Copy some additional icons
 for F in $(ls additional); do
-    if [ ! -e "$EVOLVERE2DIR/apps/64/$F" ]; then cp -vf additional/$F $EVOLVERE2DIR/apps/64/; fi
+    if [ ! -e "$EVOLVERE2DIR/apps/64/$F" ] || [[ "$F" == *solyd* ]]; then
+        cp -vf additional/$F $EVOLVERE2DIR/apps/64/
+    fi
 done
 if [ ! -e "$EVOLVERE2DIR/apps/24/applications-internet.svg" ]; then cp -vf $EVOLVERE2DIR/places/24/folder-remote.svg $EVOLVERE2DIR/apps/24/applications-internet.svg; fi
 
@@ -231,6 +235,9 @@ rm -f "$EVOLVERE2DIR-mono/apps/18/org.xfce.settings.manager.svg"
 rm -f "$EVOLVERE2DIR-mono/apps/22/org.xfce.settings.manager.svg"
 rm -f "$EVOLVERE2DIR-mono/apps/24/org.xfce.settings.manager.svg"
 rm -f "$EVOLVERE2DIR-mono/apps/64/org.xfce.settings.manager.svg"
+
+# Remove broken symlinks
+find . -xtype l -delete
 
 # Make a copy of the icon directory
 EVOLVERE2DIR=$EVOLVERE2DIR-blue

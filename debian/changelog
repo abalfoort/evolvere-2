@@ -2,67 +2,67 @@ evolvere-2 (2.1.0) stable; urgency=low
 
   * Update 20230101
 
- -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Sun, 01 Jan 2023 19:50:44 +0100
+ -- Arjen Balfoort <arjenbalfoort@hotmail.com>  Sun, 01 Jan 2023 19:50:44 +0100
 
 evolvere-2 (2.0.9) stable; urgency=low
 
   * Add org.xfce.ristretto.svg
   * Add org.gnome.Gnote.svg
 
- -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Thu, 09 Sep 2021 10:06:12 +0200
+ -- Arjen Balfoort <arjenbalfoort@hotmail.com>  Thu, 09 Sep 2021 10:06:12 +0200
 
 evolvere-2 (2.0.8) stable; urgency=low
 
   * Added firewall-config icon
 
- -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Tue, 31 Aug 2021 13:34:03 +0200
+ -- Arjen Balfoort <arjenbalfoort@hotmail.com>  Tue, 31 Aug 2021 13:34:03 +0200
 
 evolvere-2 (2.0.7) stable; urgency=low
 
   * Moved blue mono preferences-desktop.svg to blue-mono package
 
- -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Tue, 17 Aug 2021 13:41:52 +0200
+ -- Arjen Balfoort <arjenbalfoort@hotmail.com>  Tue, 17 Aug 2021 13:41:52 +0200
 
 evolvere-2 (2.0.6) stable; urgency=low
 
   * Removed dead symlinks
 
- -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Thu, 12 Aug 2021 13:54:07 +0200
+ -- Arjen Balfoort <arjenbalfoort@hotmail.com>  Thu, 12 Aug 2021 13:54:07 +0200
 
 evolvere-2 (2.0.5) stable; urgency=low
 
   * Updated icons from upstream
   * Added official SolydX and SolydK icons
 
- -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Fri, 06 Aug 2021 09:22:49 +0200
+ -- Arjen Balfoort <arjenbalfoort@hotmail.com>  Fri, 06 Aug 2021 09:22:49 +0200
 
 evolvere-2 (2.0.4) stable; urgency=low
 
   * Added links for Xfce4 icon renaming
 
- -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Tue, 16 Feb 2021 08:45:08 +0100
+ -- Arjen Balfoort <arjenbalfoort@hotmail.com>  Tue, 16 Feb 2021 08:45:08 +0100
 
 evolvere-2 (2.0.3) stable; urgency=low
 
   * Add symlinks for missing battery icons
 
- -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Mon, 11 Jan 2021 18:34:46 +0100
+ -- Arjen Balfoort <arjenbalfoort@hotmail.com>  Mon, 11 Jan 2021 18:34:46 +0100
 
 evolvere-2 (2.0.2) stable; urgency=low
 
   * Updated icons
   * Added links for Xfce4 icon renaming
 
- -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Thu, 07 Jan 2021 12:03:37 +0100
+ -- Arjen Balfoort <arjenbalfoort@hotmail.com>  Thu, 07 Jan 2021 12:03:37 +0100
 
 evolvere-2 (2.0.1) stable; urgency=low
 
   * Keep blueman monochrome icons
 
- -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Mon, 18 May 2020 10:19:42 +0200
+ -- Arjen Balfoort <arjenbalfoort@hotmail.com>  Mon, 18 May 2020 10:19:42 +0200
 
 evolvere-2 (2.0.0) stable; urgency=low
 
   * First build
 
- -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Sun, 10 May 2020 17:36:08 +0200
+ -- Arjen Balfoort <arjenbalfoort@hotmail.com>  Sun, 10 May 2020 17:36:08 +0200

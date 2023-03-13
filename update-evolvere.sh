@@ -18,6 +18,7 @@ rm $EVOLVERE2DIR/icon-theme.cache
 #rm $EVOLVERE2DIR/preview.png
 #find $EVOLVERE2DIR -type f -name "*.sh" -delete
 #find $EVOLVERE2DIR -type f -name "adjust-colors*" -delete
+find $EVOLVERE2DIR -type f -exec chmod 644 {} \;
 
 
 # Create additional symlinks
@@ -42,6 +43,17 @@ if [ ! -e "$EVOLVERE2DIR/apps/64/org.gnome.FontManager.svg" ]; then ln -sfv 'fon
 if [ ! -e "$EVOLVERE2DIR/apps/64/org.gnome.FontViewer.svg" ]; then ln -sfv 'fonts.svg' "$EVOLVERE2DIR/apps/64/org.gnome.FontViewer.svg"; fi
 if [ ! -e "$EVOLVERE2DIR/apps/64/preferences-desktop.svg" ]; then ln -sfv 'preferences.svg' "$EVOLVERE2DIR/apps/64/preferences-desktop.svg"; fi
 if [ ! -e "$EVOLVERE2DIR/apps/64/preferences-desktop-emoticons.svg" ]; then ln -sfv '../../actions/64/face-smile.svg' "$EVOLVERE2DIR/apps/64/preferences-desktop-emoticons.svg"; fi
+if [ ! -e "$EVOLVERE2DIR/apps/64/galternatives.svg" ]; then ln -sfv 'preferences-system.svg' "$EVOLVERE2DIR/apps/64/galternatives.svg"; fi
+
+if [ ! -e "$EVOLVERE2DIR/apps/16/diodon-panel.svg" ]; then ln -sfv 'clipboard.svg' "$EVOLVERE2DIR/apps/16/diodon-panel.svg"; fi
+if [ ! -e "$EVOLVERE2DIR/apps/18/diodon-panel.svg" ]; then ln -sfv 'clipboard.svg' "$EVOLVERE2DIR/apps/18/diodon-panel.svg"; fi
+if [ ! -e "$EVOLVERE2DIR/apps/22/diodon-panel.svg" ]; then ln -sfv 'clipboard.svg' "$EVOLVERE2DIR/apps/22/diodon-panel.svg"; fi
+if [ ! -e "$EVOLVERE2DIR/apps/24/diodon-panel.svg" ]; then ln -sfv 'clipboard.svg' "$EVOLVERE2DIR/apps/24/diodon-panel.svg"; fi
+if [ ! -e "$EVOLVERE2DIR/apps/16/xfce4-clipman-plugin.svg" ]; then ln -sfv 'clipboard.svg' "$EVOLVERE2DIR/apps/16/xfce4-clipman-plugin.svg"; fi
+if [ ! -e "$EVOLVERE2DIR/apps/18/xfce4-clipman-plugin.svg" ]; then ln -sfv 'clipboard.svg' "$EVOLVERE2DIR/apps/18/xfce4-clipman-plugin.svg"; fi
+if [ ! -e "$EVOLVERE2DIR/apps/22/xfce4-clipman-plugin.svg" ]; then ln -sfv 'clipboard.svg' "$EVOLVERE2DIR/apps/22/xfce4-clipman-plugin.svg"; fi
+if [ ! -e "$EVOLVERE2DIR/apps/24/xfce4-clipman-plugin.svg" ]; then ln -sfv 'clipboard.svg' "$EVOLVERE2DIR/apps/24/xfce4-clipman-plugin.svg"; fi
+
 
 for F in $(find $EVOLVERE2DIR -name "ristretto.svg"); do
     if [ ! -e $(dirname $F)/org.xfce.ristretto.svg ]; then

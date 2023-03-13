@@ -87,4 +87,9 @@ preferences-contact-list.svg
 stock_addressbook.svg
 x-office-address-book.svg
 web-browser.svg
+clipboard.svg
+diodon-panel.svg
 system-software-update.svg
+software-update-available.svg
+software-update-urgent.svg
+user-desktop.svg

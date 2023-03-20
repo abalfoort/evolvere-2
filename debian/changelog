@@ -1,3 +1,9 @@
+evolvere-2 (2.1.4) stable; urgency=low
+
+  * Add skanlite icon
+
+ -- Arjen Balfoort <arjenbalfoort@hotmail.com>  Sun, 19 Mar 2023 17:59:24 +0100
+
 evolvere-2 (2.1.3) stable; urgency=low
 
   * Add lxqt additional icons

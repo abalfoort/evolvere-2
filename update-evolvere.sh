@@ -44,6 +44,8 @@ if [ ! -e "$EVOLVERE2DIR/apps/64/org.gnome.FontViewer.svg" ]; then ln -sfv 'font
 if [ ! -e "$EVOLVERE2DIR/apps/64/preferences-desktop.svg" ]; then ln -sfv 'preferences.svg' "$EVOLVERE2DIR/apps/64/preferences-desktop.svg"; fi
 if [ ! -e "$EVOLVERE2DIR/apps/64/preferences-desktop-emoticons.svg" ]; then ln -sfv '../../actions/64/face-smile.svg' "$EVOLVERE2DIR/apps/64/preferences-desktop-emoticons.svg"; fi
 if [ ! -e "$EVOLVERE2DIR/apps/64/galternatives.svg" ]; then ln -sfv 'preferences-system.svg' "$EVOLVERE2DIR/apps/64/galternatives.svg"; fi
+if [ ! -e "$EVOLVERE2DIR/apps/64/org.kde.skanlite.svg" ]; then ln -sfv 'scanner.svg' "$EVOLVERE2DIR/apps/64/org.kde.skanlite.svg"; fi
+
 
 if [ ! -e "$EVOLVERE2DIR/apps/16/diodon-panel.svg" ]; then ln -sfv 'clipboard.svg' "$EVOLVERE2DIR/apps/16/diodon-panel.svg"; fi
 if [ ! -e "$EVOLVERE2DIR/apps/18/diodon-panel.svg" ]; then ln -sfv 'clipboard.svg' "$EVOLVERE2DIR/apps/18/diodon-panel.svg"; fi

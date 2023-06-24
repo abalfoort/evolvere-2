@@ -45,12 +45,15 @@ if [ ! -e "$EVOLVERE2DIR/apps/64/preferences-desktop.svg" ]; then ln -sfv 'prefe
 if [ ! -e "$EVOLVERE2DIR/apps/64/preferences-desktop-emoticons.svg" ]; then ln -sfv '../../actions/64/face-smile.svg' "$EVOLVERE2DIR/apps/64/preferences-desktop-emoticons.svg"; fi
 if [ ! -e "$EVOLVERE2DIR/apps/64/galternatives.svg" ]; then ln -sfv 'preferences-system.svg' "$EVOLVERE2DIR/apps/64/galternatives.svg"; fi
 if [ ! -e "$EVOLVERE2DIR/apps/64/org.kde.skanlite.svg" ]; then ln -sfv 'scanner.svg' "$EVOLVERE2DIR/apps/64/org.kde.skanlite.svg"; fi
+if [ ! -e "$EVOLVERE2DIR/apps/64/display-im6.q16.svg" ]; then ln -sfv 'imagemagick.svg' "$EVOLVERE2DIR/apps/64/display-im6.q16.svg"; fi
+
 
 
 if [ ! -e "$EVOLVERE2DIR/apps/16/diodon-panel.svg" ]; then ln -sfv 'clipboard.svg' "$EVOLVERE2DIR/apps/16/diodon-panel.svg"; fi
 if [ ! -e "$EVOLVERE2DIR/apps/18/diodon-panel.svg" ]; then ln -sfv 'clipboard.svg' "$EVOLVERE2DIR/apps/18/diodon-panel.svg"; fi
 if [ ! -e "$EVOLVERE2DIR/apps/22/diodon-panel.svg" ]; then ln -sfv 'clipboard.svg' "$EVOLVERE2DIR/apps/22/diodon-panel.svg"; fi
 if [ ! -e "$EVOLVERE2DIR/apps/24/diodon-panel.svg" ]; then ln -sfv 'clipboard.svg' "$EVOLVERE2DIR/apps/24/diodon-panel.svg"; fi
+
 if [ ! -e "$EVOLVERE2DIR/apps/16/xfce4-clipman-plugin.svg" ]; then ln -sfv 'clipboard.svg' "$EVOLVERE2DIR/apps/16/xfce4-clipman-plugin.svg"; fi
 if [ ! -e "$EVOLVERE2DIR/apps/18/xfce4-clipman-plugin.svg" ]; then ln -sfv 'clipboard.svg' "$EVOLVERE2DIR/apps/18/xfce4-clipman-plugin.svg"; fi
 if [ ! -e "$EVOLVERE2DIR/apps/22/xfce4-clipman-plugin.svg" ]; then ln -sfv 'clipboard.svg' "$EVOLVERE2DIR/apps/22/xfce4-clipman-plugin.svg"; fi
@@ -236,6 +239,10 @@ if [ ! -e "$EVOLVERE2DIR/apps/18/org.xfce.settings.manager.svg" ]; then ln -sfv 
 if [ ! -e "$EVOLVERE2DIR/apps/22/org.xfce.settings.manager.svg" ]; then ln -sfv 'preferences.svg' "$EVOLVERE2DIR/apps/22/org.xfce.settings.manager.svg"; fi
 if [ ! -e "$EVOLVERE2DIR/apps/24/org.xfce.settings.manager.svg" ]; then ln -sfv 'preferences.svg' "$EVOLVERE2DIR/apps/24/org.xfce.settings.manager.svg"; fi
 if [ ! -e "$EVOLVERE2DIR/apps/64/org.xfce.settings.manager.svg" ]; then ln -sfv 'preferences.svg' "$EVOLVERE2DIR/apps/64/org.xfce.settings.manager.svg"; fi
+if [ ! -e "$EVOLVERE2DIR/apps/16/display-im6.q16.svg" ]; then ln -sfv 'imagemagick.svg' "$EVOLVERE2DIR/apps/16/display-im6.q16.svg"; fi
+if [ ! -e "$EVOLVERE2DIR/apps/18/display-im6.q16.svg" ]; then ln -sfv 'imagemagick.svg' "$EVOLVERE2DIR/apps/18/display-im6.q16.svg"; fi
+if [ ! -e "$EVOLVERE2DIR/apps/22/display-im6.q16.svg" ]; then ln -sfv 'imagemagick.svg' "$EVOLVERE2DIR/apps/22/display-im6.q16.svg"; fi
+if [ ! -e "$EVOLVERE2DIR/apps/24/display-im6.q16.svg" ]; then ln -sfv 'imagemagick.svg' "$EVOLVERE2DIR/apps/24/display-im6.q16.svg"; fi
 
 # These mono icons should be available in blue-mono theme
 if [ ! -e "$EVOLVERE2DIR-blue-mono/apps/16/preferences-desktop.svg" ]; then ln -sfv 'preferences.svg' "$EVOLVERE2DIR-blue-mono/apps/16/preferences-desktop.svg"; fi

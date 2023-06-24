@@ -34,6 +34,7 @@ gnome-help.svg
 gtk-help.svg
 help.svg
 help-browser.svg
+imagemagick.svg
 lpi-help.svg
 stock_help-agent.svg
 stock_help.svg

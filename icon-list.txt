@@ -94,3 +94,4 @@ system-software-update.svg
 software-update-available.svg
 software-update-urgent.svg
 user-desktop.svg
+firewall.svg

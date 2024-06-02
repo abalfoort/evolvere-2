@@ -1,3 +1,15 @@
+evolvere-2 (2.1.8) stable; urgency=low
+
+  * Add icon for hardinfo2
+
+ -- Arjen Balfoort <arjenbalfoort@hotmail.com>  Sun, 02 Jun 2024 11:27:21 +0200
+
+evolvere-2 (2.1.7) stable; urgency=low
+
+  * Add icons for firewall-applet (error/panic/shield_up)
+
+ -- Arjen Balfoort <arjenbalfoort@hotmail.com>  Mon, 14 Aug 2023 14:06:14 +0200
+
 evolvere-2 (2.1.6) stable; urgency=low
 
   * Add mono firewall.svg to default icon sets

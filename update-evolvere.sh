@@ -46,7 +46,7 @@ if [ ! -e "$EVOLVERE2DIR/apps/64/preferences-desktop-emoticons.svg" ]; then ln -
 if [ ! -e "$EVOLVERE2DIR/apps/64/galternatives.svg" ]; then ln -sfv 'preferences-system.svg' "$EVOLVERE2DIR/apps/64/galternatives.svg"; fi
 if [ ! -e "$EVOLVERE2DIR/apps/64/org.kde.skanlite.svg" ]; then ln -sfv 'scanner.svg' "$EVOLVERE2DIR/apps/64/org.kde.skanlite.svg"; fi
 if [ ! -e "$EVOLVERE2DIR/apps/64/display-im6.q16.svg" ]; then ln -sfv 'imagemagick.svg' "$EVOLVERE2DIR/apps/64/display-im6.q16.svg"; fi
-
+if [ ! -e "$EVOLVERE2DIR/apps/64/hardinfo2.svg" ]; then ln -sfv 'hardinfo.svg' "$EVOLVERE2DIR/apps/64/hardinfo2.svg"; fi
 
 
 if [ ! -e "$EVOLVERE2DIR/apps/16/diodon-panel.svg" ]; then ln -sfv 'clipboard.svg' "$EVOLVERE2DIR/apps/16/diodon-panel.svg"; fi
@@ -197,9 +197,14 @@ if [ ! -e "$EVOLVERE2DIR/actions/24/xfsm-switch-user.svg" ]; then ln -sfv 'syste
 if [ ! -e "$EVOLVERE2DIR/actions/64/xfsm-switch-user.svg" ]; then ln -sfv 'system-switch-user.svg' "$EVOLVERE2DIR/actions/64/xfsm-switch-user.svg"; fi
 
 # Copy some additional icons
-for F in $(ls additional); do
+for F in $(ls additional/64); do
     if [ ! -e "$EVOLVERE2DIR/apps/64/$F" ] || [[ "$F" == *solyd* ]]; then
         cp -vf additional/$F $EVOLVERE2DIR/apps/64/
+    fi
+done
+for F in $(ls additional/24); do
+    if [ ! -e "$EVOLVERE2DIR/apps/24/$F" ]; then
+        cp -vf additional/$F $EVOLVERE2DIR/apps/24/
     fi
 done
 if [ ! -e "$EVOLVERE2DIR/apps/24/applications-internet.svg" ]; then cp -vf $EVOLVERE2DIR/places/24/folder-remote.svg $EVOLVERE2DIR/apps/24/applications-internet.svg; fi

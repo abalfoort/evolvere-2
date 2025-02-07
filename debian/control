@@ -12,21 +12,9 @@ Architecture: all
 Depends: ${misc:Depends}
 Description: Evolvere 2 icon theme
  Icon theme: default
- 
-Package: evolvere-2-mono
-Architecture: all
-Depends: ${misc:Depends}, evolvere-2
-Description: Evolvere 2 mono app icons
- Icon theme: monochrome app icons for evolvere-2
 
 Package: evolvere-2-blue
 Architecture: all
 Depends: ${misc:Depends}
 Description: Evolvere 2 Blue icon theme
  Icon theme: blue folders edition
- 
-Package: evolvere-2-blue-mono
-Architecture: all
-Depends: ${misc:Depends}, evolvere-2-blue
-Description: Evolvere 2 Blue mono app icons
- Icon theme: monochrome app icons for evolvere-2-blue

@@ -1,3 +1,16 @@
+evolvere-2 (2.2.0) stable; urgency=low
+
+  * Update for Plasma 6
+
+ -- Arjen Balfoort <arjenbalfoort@hotmail.com>  Tue, 04 Feb 2025 09:23:42 +0100
+
+evolvere-2 (2.1.9) stable; urgency=low
+
+  * Updated icons from upstream
+  * Add icon for pcmanfm-qt
+
+ -- Arjen Balfoort <arjenbalfoort@hotmail.com>  Mon, 13 Jan 2025 11:18:07 +0100
+
 evolvere-2 (2.1.8) stable; urgency=low
 
   * Add icon for hardinfo2

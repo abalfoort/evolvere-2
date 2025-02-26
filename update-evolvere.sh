@@ -1,7 +1,36 @@
 #! /bin/bash
 
+SKIPPULL=true
 KEEPSOURCE=true
 EVOLVERE2DIR='evolvere-2'
+
+function create_missing() {
+    ORG=$1
+    NEW=$2
+    
+    # Create icons up to 24 if they don't exist
+    for F in $(find $EVOLVERE2DIR -name "$ORG"); do
+        if [ ! -e $(dirname $F)/$NEW ]; then
+            ln -sv "$ORG" $(dirname $F)/$NEW
+        fi
+    done 
+}
+
+function create_missing_from_mono() {
+    ORG=$1
+    
+    # Create icons from 32 to 64 if they don't exist
+    for F in $(find $EVOLVERE2DIR/*/24 ! -type d -name "$ORG"); do
+        FN=$(basename $F)
+        D=$(dirname $F)
+        D=${D%/*}
+        for S in 32 48 64; do
+            if [ ! -e $D/$S/$FN ]; then
+                ln -sv "../24/$FN" "$D/$S/$FN"
+            fi
+        done
+    done
+}
 
 # Get source
 rm -rf $EVOLVERE2DIR*
@@ -11,7 +40,7 @@ if [ ! -e Evolvere-Icons ]; then
 else
     cd Evolvere-Icons
     echo 'Update the evolvere-2 repository'
-    git pull
+    [ ! $SKIPPULL ] && git pullgit pull
     cd ..
 fi
 
@@ -37,110 +66,72 @@ done
 for F in $(ls additional/24); do
     cp -v additional/24/$F $EVOLVERE2DIR/apps/24/
 done
-cp -v $EVOLVERE2DIR/places/24/folder-remote.svg $EVOLVERE2DIR/apps/24/applications-internet.svg
+#cp -v $EVOLVERE2DIR/places/24/folder-remote.svg $EVOLVERE2DIR/apps/24/applications-internet.svg
 rm $EVOLVERE2DIR/places/64/folder-open.svg
 cp -v $EVOLVERE2DIR/actions/64/document-open.svg $EVOLVERE2DIR/places/64/folder-open.svg
 
 
 echo '----------------'
 echo 'Create additional symlinks'
-function link_svg() {
-    ORG=$1
-    NEW=$2
-    for F in $(find $EVOLVERE2DIR -name "$ORG"); do
-        if [ ! -e $(dirname $F)/$NEW ]; then
-            ln -sv "$ORG" $(dirname $F)/$NEW
-        fi
-    done
-}
+create_missing 'gnote.svg' 'org.gnome.Gnote.svg'
+create_missing 'system-file-manager.svg' 'MidnightCommander.svg'
+create_missing 'preferences-system.svg' 'galternatives.svg'
+create_missing 'scanner.svg' 'org.kde.skanlite.svg'
+create_missing 'imagemagick.svg' 'display-im6.q16.svg'
+create_missing 'gtkhash.svg' 'org.gtkhash.gtkhash.svg'
+create_missing 'system-file-manager.svg' 'pcmanfm-qt.svg'
+create_missing 'mkvmergeGUI.svg' 'mkvtoolnix-gui.svg'
+create_missing 'samba-share.svg' 'gadmin-samba.svg'
+create_missing 'kmail.svg' 'emblem-mail.svg'
+create_missing 'preferences.svg' 'ca.desrt.dconf-editor.svg'
+create_missing 'pass.svg' 'org.gnome.seahorse.Application.svg'
+create_missing 'fonts.svg' 'org.gnome.FontManager.svg'
+create_missing 'fonts.svg' 'org.gnome.FontViewer.svg'
+create_missing 'hardinfo.svg' 'hardinfo2.svg'
+create_missing 'file-compressor.svg' 'lxqt-archiver.svg'
+create_missing 'preferences-system-login.svg' 'lightdm.svg'
+create_missing 'distributor-logo-debian.svg' 'plymouth.svg'
+create_missing 'video-display.svg' 'xwaylandvideobridge.svg'
+create_missing 'clipboard.svg' 'klipper.svg'
 
-# Add icons to all dirs
-function link_svg_all() {
-    ORG=$1
-    NEW=$2
-    
-    if [ -z "$NEW" ]; then
-        NEW=$ORG
-    fi
-    
-    # Make sure all mono icons up to 24 are created
-    link_svg "$ORG" "$NEW"
-    
-    for F in $(find $EVOLVERE2DIR/*/24 -name "$ORG"); do
-        D=$(dirname $F)
-        D=${D%/*}
-        for S in 32 48 64; do
-            if [ ! -e $D/$S/$NEW ]; then
-                ln -sv "../24/$ORG" "$D/$S/$NEW"
-            fi
-        done
-    done
-}
+create_missing_from_mono 'battery-good-charging-symbolic.svg'
+create_missing_from_mono 'battery-full-charging-symbolic.svg'
+create_missing_from_mono 'battery-low-symbolic.svg'
+create_missing_from_mono 'battery-empty-charging-symbolic.svg'
+create_missing_from_mono 'battery-full-charged-symbolic.svg'
+create_missing_from_mono 'battery-empty-symbolic.svg'
+create_missing_from_mono 'battery-caution-symbolic.svg'
+create_missing_from_mono 'battery-low-charging-symbolic.svg'
+create_missing_from_mono 'battery-good-symbolic.svg'
+create_missing_from_mono 'battery-caution-charging-symbolic.svg'
+create_missing_from_mono 'battery-full-symbolic.svg'
+create_missing_from_mono 'battery-missing-symbolic.svg'
+create_missing_from_mono 'battery-good-charging.svg'
+create_missing_from_mono 'battery-full-charging.svg'
+create_missing_from_mono 'battery-low.svg'
+create_missing_from_mono 'battery-empty-charging.svg'
+create_missing_from_mono 'battery-full-charged.svg'
+create_missing_from_mono 'battery-empty.svg'
+create_missing_from_mono 'battery-caution.svg'
+create_missing_from_mono 'battery-low-charging.svg'
+create_missing_from_mono 'battery-good.svg'
+create_missing_from_mono 'battery-caution-charging.svg'
+create_missing_from_mono 'battery-full.svg'
+create_missing_from_mono 'battery-missing.svg'
+create_missing_from_mono 'system-shutdown.svg'
+create_missing_from_mono 'system-reboot.svg'
+create_missing_from_mono 'system-log-out.svg'
+create_missing_from_mono 'system-suspend.svg'
+create_missing_from_mono 'system-suspend-hibernate.svg'
+create_missing_from_mono 'system-lock-screen.svg'
+create_missing_from_mono 'system-switch-user.svg'
+create_missing_from_mono 'input-keyboard.svg'
+create_missing_from_mono 'video-display.svg'
 
-link_svg 'gnote.svg' 'org.gnome.Gnote.svg'
-link_svg 'system-file-manager.svg' 'MidnightCommander.svg'
-link_svg 'preferences-system.svg' 'galternatives.svg'
-link_svg 'scanner.svg' 'org.kde.skanlite.svg'
-link_svg 'clipboard.svg' 'diodon-panel.svg'
-link_svg 'imagemagick.svg' 'display-im6.q16.svg'
-link_svg 'gtkhash.svg' 'org.gtkhash.gtkhash.svg'
-link_svg 'system-file-manager.svg' 'pcmanfm-qt.svg'
-link_svg 'mkvmergeGUI.svg' 'mkvtoolnix-gui.svg'
-link_svg 'samba-share.svg' 'gadmin-samba.svg'
-link_svg 'kmail.svg' 'emblem-mail.svg'
-link_svg 'preferences.svg' 'ca.desrt.dconf-editor.svg'
-link_svg 'pass.svg' 'org.gnome.seahorse.Application.svg'
-link_svg 'fonts.svg' 'org.gnome.FontManager.svg'
-link_svg 'fonts.svg' 'org.gnome.FontViewer.svg'
-link_svg 'hardinfo.svg' 'hardinfo2.svg'
-link_svg 'file-compressor.svg' 'lxqt-archiver.svg'
-link_svg 'preferences-system-login.svg' 'lightdm.svg'
-link_svg 'distributor-logo-debian.svg' 'plymouth.svg'
 # SolydL
-
-
-link_svg_all 'battery-good-charging-symbolic.svg'
-link_svg_all 'battery-full-charging-symbolic.svg'
-link_svg_all 'battery-low-symbolic.svg'
-link_svg_all 'battery-empty-charging-symbolic.svg'
-link_svg_all 'battery-full-charged-symbolic.svg'
-link_svg_all 'battery-empty-symbolic.svg'
-link_svg_all 'battery-caution-symbolic.svg'
-link_svg_all 'battery-low-charging-symbolic.svg'
-link_svg_all 'battery-good-symbolic.svg'
-link_svg_all 'battery-caution-charging-symbolic.svg'
-link_svg_all 'battery-full-symbolic.svg'
-link_svg_all 'battery-missing-symbolic.svg'
-link_svg_all 'battery-good-charging.svg'
-link_svg_all 'battery-full-charging.svg'
-link_svg_all 'battery-low.svg'
-link_svg_all 'battery-empty-charging.svg'
-link_svg_all 'battery-full-charged.svg'
-link_svg_all 'battery-empty.svg'
-link_svg_all 'battery-caution.svg'
-link_svg_all 'battery-low-charging.svg'
-link_svg_all 'battery-good.svg'
-link_svg_all 'battery-caution-charging.svg'
-link_svg_all 'battery-full.svg'
-link_svg_all 'battery-missing.svg'
-link_svg_all 'clipboard.svg' 'klipper.svg'
-link_svg_all 'system-shutdown.svg'
-link_svg_all 'system-reboot.svg'
-link_svg_all 'system-log-out.svg'
-link_svg_all 'system-suspend.svg'
-link_svg_all 'system-suspend-hibernate.svg'
-link_svg_all 'system-lock-screen.svg'
-link_svg_all 'system-switch-user.svg'
-# SolydL
-link_svg_all 'diodon.svg'
-link_svg_all 'diodon-panel.svg'
-link_svg_all 'blueman.svg'
-link_svg_all 'user-desktop.svg'
-link_svg_all 'system-users.svg'
-link_svg_all 'preferences-desktop-locale.svg'
-link_svg_all 'thermometer.svg' 'sensors.svg'
-link_svg_all 'preferences-desktop-display.svg' 'preferences-desktop-display.svg'
-link_svg_all 'input-mouse.svg' 'preferences-desktop-peripherals.svg'
+create_missing 'clipboard.svg' 'diodon-panel.svg'
+rm $EVOLVERE2DIR/apps/64/diodon-panel.svg
+create_missing_from_mono 'diodon-panel.svg'
 
 # Remove broken symlinks
 find . -xtype l -delete

@@ -1,3 +1,15 @@
+evolvere-2 (2.2.2) stable; urgency=low
+
+  * Revert to original directory structure
+
+ -- Arjen Balfoort <arjenbalfoort@hotmail.com>  Tue, 25 Feb 2025 08:28:41 +0100
+
+evolvere-2 (2.2.1) stable; urgency=low
+
+  * More plasma 6 icons
+
+ -- Arjen Balfoort <arjenbalfoort@hotmail.com>  Sat, 08 Feb 2025 17:34:52 +0100
+
 evolvere-2 (2.2.0) stable; urgency=low
 
   * Update for Plasma 6

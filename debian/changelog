@@ -1,3 +1,9 @@
+evolvere-2 (2.2.3) stable; urgency=low
+
+  * Additional icons
+
+ -- Arjen Balfoort <arjenbalfoort@hotmail.com>  Fri, 28 Feb 2025 10:20:57 +0100
+
 evolvere-2 (2.2.2) stable; urgency=low
 
   * Revert to original directory structure

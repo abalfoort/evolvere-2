@@ -1,6 +1,6 @@
 #! /bin/bash
 
-SKIPPULL=true
+GITPULL=true
 KEEPSOURCE=true
 EVOLVERE2DIR='evolvere-2'
 
@@ -32,6 +32,14 @@ function create_missing_from_mono() {
     done
 }
 
+function remove_mono() {
+    FN="$1.svg"
+    for S in 8 16 18 22 24; do
+        find $EVOLVERE2DIR/*/$S/$FN -delete 2>/dev/null
+    done
+
+}
+
 # Get source
 rm -rf $EVOLVERE2DIR*
 if [ ! -e Evolvere-Icons ]; then
@@ -39,8 +47,10 @@ if [ ! -e Evolvere-Icons ]; then
     git clone https://github.com/franksouza183/Evolvere-Icons.git
 else
     cd Evolvere-Icons
-    echo 'Update the evolvere-2 repository'
-    [ ! $SKIPPULL ] && git pullgit pull
+    if $GITPULL; then
+        echo 'Update the evolvere-2 repository'
+        git pull
+    fi
     cd ..
 fi
 
@@ -72,7 +82,7 @@ cp -v $EVOLVERE2DIR/actions/64/document-open.svg $EVOLVERE2DIR/places/64/folder-
 
 
 echo '----------------'
-echo 'Create additional symlinks'
+echo 'Create missing icons'
 create_missing 'gnote.svg' 'org.gnome.Gnote.svg'
 create_missing 'system-file-manager.svg' 'MidnightCommander.svg'
 create_missing 'preferences-system.svg' 'galternatives.svg'
@@ -94,6 +104,16 @@ create_missing 'distributor-logo-debian.svg' 'plymouth.svg'
 create_missing 'video-display.svg' 'xwaylandvideobridge.svg'
 create_missing 'clipboard.svg' 'klipper.svg'
 
+echo '----------------'
+echo 'Remove mono icons'
+remove_mono 'solydk'
+remove_mono 'solydk-black'
+remove_mono 'solydx'
+remove_mono 'solydx-black'
+remove_mono 'solydxk'
+
+echo '----------------'
+echo 'Create missing mono icons'
 create_missing_from_mono 'battery-good-charging-symbolic.svg'
 create_missing_from_mono 'battery-full-charging-symbolic.svg'
 create_missing_from_mono 'battery-low-symbolic.svg'
@@ -127,6 +147,15 @@ create_missing_from_mono 'system-lock-screen.svg'
 create_missing_from_mono 'system-switch-user.svg'
 create_missing_from_mono 'input-keyboard.svg'
 create_missing_from_mono 'video-display.svg'
+create_missing_from_mono 'klipper.svg'
+create_missing_from_mono 'media-optical.svg'
+create_missing_from_mono 'drive-removable-media.svg'
+create_missing_from_mono 'drive-removable-media-usb-pendrive.svg'
+create_missing_from_mono 'drive-removable-media-scsi.svg'
+create_missing_from_mono 'drive-removable-media-usb.svg'
+create_missing_from_mono 'drive-removable-media-ieee1394.svg'
+create_missing_from_mono 'system-software-update.svg'
+
 
 # SolydL
 create_missing 'clipboard.svg' 'diodon-panel.svg'

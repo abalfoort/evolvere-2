@@ -1,3 +1,15 @@
+evolvere-2 (2.2.5) stable; urgency=low
+
+  * Add some additional mono icons
+
+ -- Arjen Balfoort <arjenbalfoort@hotmail.com>  Fri, 14 Mar 2025 09:53:03 +0100
+
+evolvere-2 (2.2.4) stable; urgency=low
+
+  * Remove mono icons for solydx, solydk, solydxk
+
+ -- Arjen Balfoort <arjenbalfoort@hotmail.com>  Thu, 13 Mar 2025 15:44:21 +0100
+
 evolvere-2 (2.2.3) stable; urgency=low
 
   * Additional icons

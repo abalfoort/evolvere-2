@@ -1,7 +1,7 @@
 Source: evolvere-2
 Section: misc
 Priority: optional
-Maintainer: Arjen Balfoort <arjenbalfoort@hotmail.com>
+Maintainer: Arjen Balfoort <solydxk.abalfoort@tuta.com>
 Build-Depends: debhelper-compat (= 12)
 Standards-Version: 4.5.0
 Vcs-Git: git://github.com/franksouza183/Evolvere-Icons.git

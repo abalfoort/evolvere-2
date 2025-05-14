@@ -1,6 +1,6 @@
 #! /bin/bash
 
-GITPULL=true
+GITPULL=false
 KEEPSOURCE=true
 EVOLVERE2DIR='evolvere-2'
 
@@ -103,6 +103,13 @@ create_missing 'preferences-system-login.svg' 'lightdm.svg'
 create_missing 'distributor-logo-debian.svg' 'plymouth.svg'
 create_missing 'video-display.svg' 'xwaylandvideobridge.svg'
 create_missing 'clipboard.svg' 'klipper.svg'
+create_missing 'knotes.svg' 'org.kde.marknote.svg'
+create_missing 'music-tag.svg' 'kid3.svg'
+create_missing 'music-tag.svg' 'kid3-qt.svg'
+create_missing 'glade.svg' 'glade3.svg'
+create_missing 'glade.svg' 'org.gnome.Glade.svg'
+create_missing 'preferences-color.svg' 'org.openrgb.OpenRGB.svg'
+create_missing 'krdc.svg' 'virt-viewer.svg'
 
 echo '----------------'
 echo 'Remove mono icons'
@@ -155,6 +162,7 @@ create_missing_from_mono 'drive-removable-media-scsi.svg'
 create_missing_from_mono 'drive-removable-media-usb.svg'
 create_missing_from_mono 'drive-removable-media-ieee1394.svg'
 create_missing_from_mono 'system-software-update.svg'
+create_missing_from_mono 'qbittorrent-tray.svg'
 
 
 # SolydL
@@ -163,7 +171,12 @@ rm $EVOLVERE2DIR/apps/64/diodon-panel.svg
 create_missing_from_mono 'diodon-panel.svg'
 
 # Remove broken symlinks
-find . -xtype l -delete
+find $EVOLVERE2DIR -xtype l -delete
+# Delete non-icon files
+find $EVOLVERE2DIR -name "*.sh" -delete
+find $EVOLVERE2DIR -name "adjust-colors" -delete
+# Make all icons not executable
+find $EVOLVERE2DIR -type f -executable -exec chmod -x {} \;
 
 # Make a copy of the icon directory
 EVOLVERE2DIR=$EVOLVERE2DIR-blue

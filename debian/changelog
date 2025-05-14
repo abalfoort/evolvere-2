@@ -1,159 +1,178 @@
+evolvere-2 (2.2.8) stable; urgency=low
+
+  * Additional icons
+
+ -- Arjen Balfoort <solydxk.abalfoort@tuta.com>  Tue, 13 May 2025 13:24:24 +0200
+
+evolvere-2 (2.2.7) stable; urgency=low
+
+  * Add icon: proton-vpn-logo
+  * Additional mono icons
+
+ -- Arjen Balfoort <solydxk.abalfoort@tuta.com>  Mon, 12 May 2025 14:03:27 +0200
+
+evolvere-2 (2.2.6) stable; urgency=low
+
+  * Add icon: org.kde.marknote
+
+ -- Arjen Balfoort <solydxk.abalfoort@tuta.com>  Mon, 31 Mar 2025 18:50:10 +0200
+
 evolvere-2 (2.2.5) stable; urgency=low
 
   * Add some additional mono icons
 
- -- Arjen Balfoort <arjenbalfoort@hotmail.com>  Fri, 14 Mar 2025 09:53:03 +0100
+ -- Arjen Balfoort <solydxk.abalfoort@tuta.com>  Fri, 14 Mar 2025 09:53:03 +0100
 
 evolvere-2 (2.2.4) stable; urgency=low
 
   * Remove mono icons for solydx, solydk, solydxk
 
- -- Arjen Balfoort <arjenbalfoort@hotmail.com>  Thu, 13 Mar 2025 15:44:21 +0100
+ -- Arjen Balfoort <solydxk.abalfoort@tuta.com>  Thu, 13 Mar 2025 15:44:21 +0100
 
 evolvere-2 (2.2.3) stable; urgency=low
 
   * Additional icons
 
- -- Arjen Balfoort <arjenbalfoort@hotmail.com>  Fri, 28 Feb 2025 10:20:57 +0100
+ -- Arjen Balfoort <solydxk.abalfoort@tuta.com>  Fri, 28 Feb 2025 10:20:57 +0100
 
 evolvere-2 (2.2.2) stable; urgency=low
 
   * Revert to original directory structure
 
- -- Arjen Balfoort <arjenbalfoort@hotmail.com>  Tue, 25 Feb 2025 08:28:41 +0100
+ -- Arjen Balfoort <solydxk.abalfoort@tuta.com>  Tue, 25 Feb 2025 08:28:41 +0100
 
 evolvere-2 (2.2.1) stable; urgency=low
 
   * More plasma 6 icons
 
- -- Arjen Balfoort <arjenbalfoort@hotmail.com>  Sat, 08 Feb 2025 17:34:52 +0100
+ -- Arjen Balfoort <solydxk.abalfoort@tuta.com>  Sat, 08 Feb 2025 17:34:52 +0100
 
 evolvere-2 (2.2.0) stable; urgency=low
 
   * Update for Plasma 6
 
- -- Arjen Balfoort <arjenbalfoort@hotmail.com>  Tue, 04 Feb 2025 09:23:42 +0100
+ -- Arjen Balfoort <solydxk.abalfoort@tuta.com>  Tue, 04 Feb 2025 09:23:42 +0100
 
 evolvere-2 (2.1.9) stable; urgency=low
 
   * Updated icons from upstream
   * Add icon for pcmanfm-qt
 
- -- Arjen Balfoort <arjenbalfoort@hotmail.com>  Mon, 13 Jan 2025 11:18:07 +0100
+ -- Arjen Balfoort <solydxk.abalfoort@tuta.com>  Mon, 13 Jan 2025 11:18:07 +0100
 
 evolvere-2 (2.1.8) stable; urgency=low
 
   * Add icon for hardinfo2
 
- -- Arjen Balfoort <arjenbalfoort@hotmail.com>  Sun, 02 Jun 2024 11:27:21 +0200
+ -- Arjen Balfoort <solydxk.abalfoort@tuta.com>  Sun, 02 Jun 2024 11:27:21 +0200
 
 evolvere-2 (2.1.7) stable; urgency=low
 
   * Add icons for firewall-applet (error/panic/shield_up)
 
- -- Arjen Balfoort <arjenbalfoort@hotmail.com>  Mon, 14 Aug 2023 14:06:14 +0200
+ -- Arjen Balfoort <solydxk.abalfoort@tuta.com>  Mon, 14 Aug 2023 14:06:14 +0200
 
 evolvere-2 (2.1.6) stable; urgency=low
 
   * Add mono firewall.svg to default icon sets
 
- -- Arjen Balfoort <arjenbalfoort@hotmail.com>  Mon, 14 Aug 2023 09:01:27 +0200
+ -- Arjen Balfoort <solydxk.abalfoort@tuta.com>  Mon, 14 Aug 2023 09:01:27 +0200
 
 evolvere-2 (2.1.5) stable; urgency=low
 
   * Add display-im6 (imagemagick)
 
- -- Arjen Balfoort <arjenbalfoort@hotmail.com>  Wed, 21 Jun 2023 18:00:15 +0200
+ -- Arjen Balfoort <solydxk.abalfoort@tuta.com>  Wed, 21 Jun 2023 18:00:15 +0200
 
 evolvere-2 (2.1.4) stable; urgency=low
 
   * Add skanlite icon
 
- -- Arjen Balfoort <arjenbalfoort@hotmail.com>  Sun, 19 Mar 2023 17:59:24 +0100
+ -- Arjen Balfoort <solydxk.abalfoort@tuta.com>  Sun, 19 Mar 2023 17:59:24 +0100
 
 evolvere-2 (2.1.3) stable; urgency=low
 
   * Add lxqt additional icons
 
- -- Arjen Balfoort <arjenbalfoort@hotmail.com>  Tue, 14 Mar 2023 09:15:02 +0100
+ -- Arjen Balfoort <solydxk.abalfoort@tuta.com>  Tue, 14 Mar 2023 09:15:02 +0100
 
 evolvere-2 (2.1.2) stable; urgency=low
 
   * Add mono xfce4-clipman-plugin icons
 
- -- Arjen Balfoort <arjenbalfoort@hotmail.com>  Sun, 12 Mar 2023 22:35:44 +0100
+ -- Arjen Balfoort <solydxk.abalfoort@tuta.com>  Sun, 12 Mar 2023 22:35:44 +0100
 
 evolvere-2 (2.1.1) stable; urgency=low
 
   * Update for SolydL
 
- -- Arjen Balfoort <arjenbalfoort@hotmail.com>  Tue, 07 Mar 2023 15:03:55 +0100
+ -- Arjen Balfoort <solydxk.abalfoort@tuta.com>  Tue, 07 Mar 2023 15:03:55 +0100
 
 evolvere-2 (2.1.0) stable; urgency=low
 
   * Update 20230101
 
- -- Arjen Balfoort <arjenbalfoort@hotmail.com>  Sun, 01 Jan 2023 19:50:44 +0100
+ -- Arjen Balfoort <solydxk.abalfoort@tuta.com>  Sun, 01 Jan 2023 19:50:44 +0100
 
 evolvere-2 (2.0.9) stable; urgency=low
 
   * Add org.xfce.ristretto.svg
   * Add org.gnome.Gnote.svg
 
- -- Arjen Balfoort <arjenbalfoort@hotmail.com>  Thu, 09 Sep 2021 10:06:12 +0200
+ -- Arjen Balfoort <solydxk.abalfoort@tuta.com>  Thu, 09 Sep 2021 10:06:12 +0200
 
 evolvere-2 (2.0.8) stable; urgency=low
 
   * Added firewall-config icon
 
- -- Arjen Balfoort <arjenbalfoort@hotmail.com>  Tue, 31 Aug 2021 13:34:03 +0200
+ -- Arjen Balfoort <solydxk.abalfoort@tuta.com>  Tue, 31 Aug 2021 13:34:03 +0200
 
 evolvere-2 (2.0.7) stable; urgency=low
 
   * Moved blue mono preferences-desktop.svg to blue-mono package
 
- -- Arjen Balfoort <arjenbalfoort@hotmail.com>  Tue, 17 Aug 2021 13:41:52 +0200
+ -- Arjen Balfoort <solydxk.abalfoort@tuta.com>  Tue, 17 Aug 2021 13:41:52 +0200
 
 evolvere-2 (2.0.6) stable; urgency=low
 
   * Removed dead symlinks
 
- -- Arjen Balfoort <arjenbalfoort@hotmail.com>  Thu, 12 Aug 2021 13:54:07 +0200
+ -- Arjen Balfoort <solydxk.abalfoort@tuta.com>  Thu, 12 Aug 2021 13:54:07 +0200
 
 evolvere-2 (2.0.5) stable; urgency=low
 
   * Updated icons from upstream
   * Added official SolydX and SolydK icons
 
- -- Arjen Balfoort <arjenbalfoort@hotmail.com>  Fri, 06 Aug 2021 09:22:49 +0200
+ -- Arjen Balfoort <solydxk.abalfoort@tuta.com>  Fri, 06 Aug 2021 09:22:49 +0200
 
 evolvere-2 (2.0.4) stable; urgency=low
 
   * Added links for Xfce4 icon renaming
 
- -- Arjen Balfoort <arjenbalfoort@hotmail.com>  Tue, 16 Feb 2021 08:45:08 +0100
+ -- Arjen Balfoort <solydxk.abalfoort@tuta.com>  Tue, 16 Feb 2021 08:45:08 +0100
 
 evolvere-2 (2.0.3) stable; urgency=low
 
   * Add symlinks for missing battery icons
 
- -- Arjen Balfoort <arjenbalfoort@hotmail.com>  Mon, 11 Jan 2021 18:34:46 +0100
+ -- Arjen Balfoort <solydxk.abalfoort@tuta.com>  Mon, 11 Jan 2021 18:34:46 +0100
 
 evolvere-2 (2.0.2) stable; urgency=low
 
   * Updated icons
   * Added links for Xfce4 icon renaming
 
- -- Arjen Balfoort <arjenbalfoort@hotmail.com>  Thu, 07 Jan 2021 12:03:37 +0100
+ -- Arjen Balfoort <solydxk.abalfoort@tuta.com>  Thu, 07 Jan 2021 12:03:37 +0100
 
 evolvere-2 (2.0.1) stable; urgency=low
 
   * Keep blueman monochrome icons
 
- -- Arjen Balfoort <arjenbalfoort@hotmail.com>  Mon, 18 May 2020 10:19:42 +0200
+ -- Arjen Balfoort <solydxk.abalfoort@tuta.com>  Mon, 18 May 2020 10:19:42 +0200
 
 evolvere-2 (2.0.0) stable; urgency=low
 
   * First build
 
- -- Arjen Balfoort <arjenbalfoort@hotmail.com>  Sun, 10 May 2020 17:36:08 +0200
+ -- Arjen Balfoort <solydxk.abalfoort@tuta.com>  Sun, 10 May 2020 17:36:08 +0200

@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-
 <svg
-   width="136.53334"
-   height="136.53334"
+   width="128"
+   height="128"
    id="svg3541"
    version="1.1"
    inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
-   sodipodi:docname="solydk-logo-black-128x128.svg"
-   inkscape:export-filename="/home/WERK/artwork/solydxk-flat/solydk/solydk-logo-flat-128x128.png"
+   sodipodi:docname="solydl-logo-black-128x128.svg"
+   inkscape:export-filename="/home/shared/Development/artwork/solydxk-flat/solydl/solydl-logo-flat-128x128.png"
    inkscape:export-xdpi="90"
    inkscape:export-ydpi="90"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
@@ -119,14 +117,14 @@
   </defs>
   <sodipodi:namedview
      id="base"
-     pagecolor="#ffffff"
-     bordercolor="#666666"
+     pagecolor="#1a1a1a"
+     bordercolor="#000000"
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="2.4865144"
-     inkscape:cx="-25.336672"
-     inkscape:cy="43.23321"
+     inkscape:zoom="4.3199428"
+     inkscape:cx="18.403021"
+     inkscape:cy="81.598303"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -134,14 +132,15 @@
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0"
-     inkscape:window-width="1920"
-     inkscape:window-height="1007"
+     inkscape:window-width="2560"
+     inkscape:window-height="1351"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
+     inkscape:document-rotation="0"
      inkscape:showpageshadow="2"
      inkscape:pagecheckerboard="0"
-     inkscape:deskcolor="#d1d1d1" />
+     inkscape:deskcolor="#1a1a1a" />
   <metadata
      id="metadata3546">
     <rdf:RDF>
@@ -158,34 +157,37 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-354.5858,-476.73422)">
+     transform="translate(-332.42419,-526.93833)">
     <circle
-       style="fill:#262626;fill-opacity:1;stroke:#666666;stroke-width:4.26666689;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="path2990-3-9-6-2-5-5"
+       style="fill:#262626;fill-opacity:1;stroke:#000000;stroke-width:3.99396;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path2990-3-9-6-2-5-5-7"
        transform="rotate(-45)"
-       cx="-86.455063"
-       cy="684.98236"
-       r="57.181488" />
+       cx="-137.62843"
+       cy="698.25696"
+       r="53.526585" />
     <path
-       style="fill:#1a1a1a;fill-opacity:1;stroke:#000000;stroke-width:4.26666689;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 376.24503,499.48386 c -13.60301,13.35147 -19.88997,31.03477 -19.20928,48.52373 16.09549,0.62048 32.01237,6.86603 44.3005,18.92694 12.29628,12.06901 18.73318,27.74592 19.35818,43.55456 17.80857,0.65973 35.76808,-5.58326 49.36342,-18.92726 13.58334,-13.33216 19.99778,-31.04394 19.35818,-48.52373 -16.12077,-0.60395 -32.06791,-6.92075 -44.37493,-19.00021 -12.31914,-12.0912 -18.75373,-27.71574 -19.35819,-43.55435 -17.80903,-0.62784 -35.85453,5.66805 -49.43788,19.00021 z"
-       id="path2990-9-5-9-6-0-5-32"
+       style="fill:#1a1a1a;fill-opacity:1;stroke:#000000;stroke-width:3.99395;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 352.4492,547.99591 c -12.73346,12.49809 -18.61856,29.0511 -17.98149,45.42222 15.06682,0.5808 29.96626,6.42716 41.46891,17.71717 11.51042,11.29759 17.53592,25.97247 18.12091,40.77065 16.67031,0.61757 33.48196,-5.22638 46.20833,-17.71747 12.71511,-12.47999 18.71954,-29.05969 18.12074,-45.4222 -15.09028,-0.56536 -30.01817,-6.47841 -41.53853,-17.78575 -11.53181,-11.31839 -17.55504,-25.94423 -18.12091,-40.77049 -16.67064,-0.58771 -33.56269,5.30577 -46.27796,17.78579 z"
+       id="path2990-9-5-9-6-0-5-32-5"
        inkscape:connector-curvature="0" />
     <circle
-       style="fill:none;stroke:#000000;stroke-width:4.26666689;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="path2990-0-4-7-1-7-6-0-4-7"
+       style="fill:none;stroke:#000000;stroke-width:3.99396;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path2990-0-4-7-1-7-6-0-4-7-3"
        transform="rotate(-45)"
-       cx="-86.455063"
-       cy="684.98236"
-       r="57.181488" />
-    <g
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:42.15610123px;line-height:125%;font-family:MathJax_Script;-inkscape-font-specification:MathJax_Script;letter-spacing:0px;word-spacing:0px;fill:#4d4d4d;fill-opacity:1;stroke:none"
-       id="text3282-7">
-      <path
-         d="m 386.11249,575.12186 8.50806,-1.64673 v -57.36084 l -8.50806,-1.64673 v -9.66077 h 32.66 v 9.66077 l -8.12383,1.64673 v 21.3525 h 6.97113 l 15.3694,-22.34053 -4.7206,-0.6587 v -9.66077 h 31.67196 v 9.66077 l -8.67273,1.48206 -19.65089,26.23778 22.06608,31.56218 8.01405,1.37228 v 9.60587 H 430.0251 v -9.60587 l 4.94016,-0.65869 -15.36941,-23.10902 h -8.94719 v 22.12098 l 8.12383,1.64673 v 9.60587 h -32.66 v -9.60587"
-         style="font-weight:bold;font-size:105.39025116px;font-family:'Roboto Slab';-inkscape-font-specification:'Roboto Slab Bold';fill:#4d4d4d;stroke-width:1.06666672;fill-opacity:1"
-         id="path3010"
-         inkscape:connector-curvature="0" />
-    </g>
+       cx="-137.62843"
+       cy="698.25696"
+       r="53.526585" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:32px;line-height:0%;font-family:MathJax_Script;-inkscape-font-specification:MathJax_Script;letter-spacing:0px;word-spacing:0px;fill:#4d4d4d;fill-opacity:1;stroke:none;stroke-width:2.66667"
+       x="324.81561"
+       y="693.98285"
+       id="text3282"
+       transform="scale(1.1047839,0.90515439)"><tspan
+         sodipodi:role="line"
+         id="tspan3284"
+         x="324.81561"
+         y="693.98285"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:116.257px;line-height:1.25;font-family:'Roboto Slab';-inkscape-font-specification:'Roboto Slab Bold';fill:#4d4d4d;stroke-width:2.66667;fill-opacity:1">L</tspan></text>
   </g>
 </svg>
